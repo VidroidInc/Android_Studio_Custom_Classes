@@ -18,7 +18,7 @@ public class CustomSharedPreferences {
 
     private SharedPreferences sharedPreferences;
     public final static String ARQUIVO_PREFERENCIAS = "arquivoPreferencias";
-    public final static int MODO_PREFERENCIAS = 0;
+    public final int MODO_PREFERENCIAS = 0;
     private SharedPreferences.Editor editor;
 
     public CustomSharedPreferences(Context context){
