@@ -18,11 +18,11 @@ public class CustomSharedPreferences {
 
     private SharedPreferences sharedPreferences;
     public final static String ARQUIVO_PREFERENCIAS = "arquivoPreferencias";
-    public final static int MODO_PREFERENCIAS_PRIVADO = 0;
+    public final static int MODO_PREFERENCIAS = 0;
     private SharedPreferences.Editor editor;
 
     public CustomSharedPreferences(Context context){
-        sharedPreferences = context.getSharedPreferences(ARQUIVO_PREFERENCIAS, MODO_PREFERENCIAS_PRIVADO);
+        sharedPreferences = context.getSharedPreferences(ARQUIVO_PREFERENCIAS, MODO_PREFERENCIAS);
         editor = sharedPreferences.edit();
     }
 
